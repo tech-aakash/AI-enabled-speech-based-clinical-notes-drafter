@@ -1,9 +1,15 @@
 import streamlit as st
 import requests
 import time
+import os
+from dotenv import load_dotenv
 
-st.title("Eka Care App")
 
+# Set page configuration
+st.set_page_config(page_title="Eka Care App", layout="wide", initial_sidebar_state="collapsed")
+st.logo(image="ekacare logo.png",size="large")
+st.subheader("Revolutionizing Healthcare with Health AI")
+st.text("Eka Care provides integrated solutions for Doctor, Patients, Developers & Hospitals.")
 # Initialize session state
 if "access_token" not in st.session_state:
     st.session_state.access_token = ""
@@ -12,9 +18,10 @@ if "refresh_token" not in st.session_state:
 if "last_refresh_time" not in st.session_state:
     st.session_state.last_refresh_time = 0
 
-# Credentials (move to st.secrets in production)
-client_id = "EC_174840552422458"
-client_secret = "dbf06b76-ea11-4b64-8c71-13257a969b40"
+load_dotenv() 
+
+client_id = os.getenv("EKA_CARE_CLIENT_ID")
+client_secret = os.getenv("EKA_CARE_CLIENT_SECRET")
 
 # --- API Functions ---
 def get_new_tokens():
@@ -73,6 +80,17 @@ def get_valid_access_token():
 # --- Automatically check & maintain token ---
 get_valid_access_token()  # This keeps the token valid at all times
 
-# --- Example use of token ---
-st.success("Access token is available and managed.")
-st.code(st.session_state.access_token, language="text")
+
+#2 column layout
+col1, col2 = st.columns(2)
+
+#Left column content
+with col1:
+    #Button for login page redirect
+    if st.button("Login to Eka Care"):
+        st.switch_page("pages/login.py")
+
+with col2:
+    #Button for registration page redirect
+    if st.button("Register on Eka Care"):
+        st.switch_page("pages/register.py")
