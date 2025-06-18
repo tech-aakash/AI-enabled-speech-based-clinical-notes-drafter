@@ -39,7 +39,7 @@ This solution is designed to reduce administrative burdens, improve accuracy, an
 
 ## Demo
 
-https://github.com/<your-username>/AI-enabled-speech-based-clinical-notes-drafter/assets/voicerx_demo2.mp4
+https://github.com/tech-aakash/AI-enabled-speech-based-clinical-notes-drafter.git/voicerx_demo2.mp4
 
 Or download/view the demo video directly:  
 [▶️ Click here for video demo (voicerx_demo2.mp4)](voicerx_demo2.mp4)
