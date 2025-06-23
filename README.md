@@ -6,7 +6,7 @@ VoiceRX is an AI-powered clinical documentation platform that streamlines medica
 
 ## Demo
 
-Watch the project demo video: [voicerx_demo2.mp4](./voicerx_demo2.mp4)
+Watch the project demo video: [voicerx_demo2.mp4](./voicerx demo.mp4)
 
 ## Features
 
