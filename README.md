@@ -114,7 +114,7 @@ Monitor symptoms. Return to the hospital if symptoms worsen within the next thre
 - Improve UI for clinical environments
 - Implement authentication and encryption for enhanced security
 
-## Authors
+## Contributors
 
 - Pranav Mundhra – NMIMS, Shirpur – pranavmundhra2005@gmail.com
 - Aakash Walvalkar – Michigan Technological University – aakash.muskurahat@gmail.com
