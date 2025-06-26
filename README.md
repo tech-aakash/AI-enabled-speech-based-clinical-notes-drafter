@@ -1,5 +1,3 @@
-Sure, here is the complete README.md content from A to Z in clean, uninterrupted Markdown format:
-
 # AI-enabled-speech-based-clinical-notes-drafter (VoiceRX)
 
 VoiceRX is an AI-powered clinical documentation platform that streamlines medical note generation from doctor-patient voice interactions. By combining advanced speech recognition, medical terminology mapping, and large language models, VoiceRX reduces physician workload and enhances the accuracy and standardization of healthcare records.
